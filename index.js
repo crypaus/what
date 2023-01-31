@@ -10,7 +10,7 @@ app.use(function(req, res, next) {
   next();
 });
 
-app.post('/start', (req, res) => {
+app.get('/start', (req, res) => {
   startTime = Date.now();
   res.json({ message: 'Stopwatch started' });
 });
